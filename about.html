@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet"
+            href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-4/assets/css/about-4.css">
+        <style>
+        .opacity-75 {
+            opacity: 0.75;
+        }
+    </style>
+    </head>
+    <body style="background: radial-gradient(rgba(0, 0, 0, 0.283), white);">
+        <section class="py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <h3
+                            class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+                        <h2 class="display-5 mb-4">At Bloggers Spot, we are
+                            always ready to accept your contribution of
+                            technological blogs to be posted.</h2>
+                        <button type="button"
+                            class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5"
+                            onclick="window.location.href='contribute.html'">Contribute
+                            Now</button>
+                        <button type="button"
+                            class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5"
+                            onclick="window.location.href='/'">Home</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <div
+                            class="card bg-light p-3 m-0 border border-primary opacity-75">
+                            <div class="row gy-3 gy-md-0">
+                                <div class="col-md-5">
+                                    <img src="images/logo.png"
+                                        class="img-fluid rounded-start"
+                                        style="width:150px;"
+                                        alt="Why Choose Us?">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body p-0">
+                                        <h2 class="card-title h4 mb-3">Why
+                                            Choose Us?</h2>
+                                        <p class="card-text lead">With years of
+                                            contributing technological blogs to
+                                            the users, we never step back to
+                                            stop our interest towards it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div
+                            class="card bg-light p-3 m-0 border border-primary opacity-75">
+                            <div class="row gy-3 gy-md-0 align-items-md-center">
+                                <div class="col-md-5">
+                                    <img src="images/Group.jpg"
+                                        class="img-fluid rounded-start"
+                                        alt="Visionary Team"
+                                        style="height:150px">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body p-0">
+                                        <h2 class="card-title h4 mb-3">Visionary
+                                            Team</h2>
+                                        <p class="card-text lead">With a team of
+                                            visionary engineers, developers, and
+                                            creative minds, we embark on a
+                                            journey to post you the
+                                            technological blogs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <button id="toggleVision" class="btn btn-secondary mb-3"
+                            onclick="toggleContent('visionContent')">Show/Hide
+                            Vision</button>
+                        <button id="toggleMission"
+                            class="btn btn-secondary mb-3"
+                            onclick="toggleContent('missionContent')">Show/Hide
+                            Mission</button>
+                    </div>
+                    <div class="col-12 d-none" id="visionContent">
+                        <div
+                            class="card bg-light p-3 m-0 border border-success opacity-75">
+                            <div class="card-body">
+                                <h2 class="card-title h4 mb-3">Our Vision</h2>
+                                <p class="card-text lead">Our vision is to
+                                    become the leading platform for
+                                    technological blog contributions, inspiring
+                                    and educating readers with high-quality,
+                                    insightful content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-none" id="missionContent">
+                        <div
+                            class="card bg-light p-3 m-0 border border-success opacity-75">
+                            <div class="card-body">
+                                <h2 class="card-title h4 mb-3">Our Mission</h2>
+                                <p class="card-text lead">Our mission is to
+                                    provide a space where tech enthusiasts and
+                                    professionals can share their knowledge,
+                                    promote innovation, and help others grow by
+                                    contributing valuable technological insights
+                                    and tutorials.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        function toggleContent(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains('d-none')) {
+                element.classList.remove('d-none');
+                element.classList.add('d-block');
+            } else {
+                element.classList.remove('d-block');
+                element.classList.add('d-none');
+            }
+        }
+    </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
