@@ -65,7 +65,8 @@
         <!-- Navigation bar end  -->
 
         <!-- corousel start  -->
-        <div class="container custom-container" style="margin-top: 100px;">
+        <div class="container custom-container"
+            style="margin-top: 100px;">
             <div id="carouselExampleIndicators"
                 data-bs-interval="500"
                 class="carousel slide custom-carousel" data-bs-ride="carousel"
@@ -128,6 +129,8 @@
                 <div class="col-md-4">
                     <div class="card">
                         <img src="images/python.png" class="card-img-top"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Python programming"
                             alt="Python Image">
                         <div class="card-body">
                             <h5 class="card-title">Python</h5>
@@ -145,6 +148,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <img src="images/javascript.png" class="card-img-top"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Javascript"
                             alt="JavaScript Image">
                         <div class="card-body">
                             <h5 class="card-title">JavaScript</h5>
@@ -162,6 +168,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <img src="images/java.jpeg" class="card-img-top"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Java programming"
                             alt="Java Image">
                         <div class="card-body">
                             <h5 class="card-title">Java</h5>
@@ -282,6 +291,13 @@
             </div>
         </footer>
         <!-- footer end  -->
+        <script>
+        // Initialize tooltips
+        document.addEventListener('DOMContentLoaded', function () {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        });
+    </script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
         <script

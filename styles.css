@@ -110,3 +110,19 @@ body {
 .footer .social-media li a {
   font-size: 1.5rem;
 }
+
+.tooltip > .tooltip-inner {
+  background-color: #00000075;
+  color: #ffffff;
+  border: 1px solid rgba(128, 0, 0, 0.205);
+  padding: 10px;
+  font-size: 15px;
+  transition: opacity 1s ease-in-out;
+}
+.tooltip.fade.show {
+  opacity: 1 !important;
+}
+
+.tooltip.fade {
+  opacity: 0 !important;
+}
